@@ -1,0 +1,253 @@
+What I generated (ready for Codex)
+
+This ZIP contains a data-first content pack for 柴犬うんちスクープ, intended to be dropped into a Phaser + TypeScript web project (e.g., Vite template).
+
+Included files
+
+MANIFEST.json — single place to find all key paths
+
+README.md — integration notes + tile legend
+
+data/items.json — equipment catalog (scoopers, shoes, bags, hats, charms) + upgrade costs
+
+data/powerups.json — power-up definitions + effect fields
+
+data/levels/index.json — level list + global tile sizing
+
+data/levels/ch*_lv*.json — 30 level definitions (grid + spawns + rules)
+
+data/strings/en.json / data/strings/ja.json — basic UI + character text
+
+data/balance/poop_types.json — poop types + lifecycle tuning
+
+data/balance/chapter_curves.json — per-chapter quota/spawn/zoomies curves
+
+data/schema/*.schema.json — optional JSON schemas
+
+data/save_example.json — example save-state shape for localStorage
+
+How to use it in a Phaser + Vite project
+Option A — Phaser loader (recommended)
+
+Phaser supports loading JSON data via its Loader system.
+
+Unzip the pack.
+
+Copy shiba-poop-scoop-codex-pack/data/ into your project’s public/data/ folder (Vite serves public at /).
+
+In your Phaser scene preload():
+
+this.load.json('items', 'data/items.json');
+this.load.json('powerups', 'data/powerups.json');
+this.load.json('levelsIndex', 'data/levels/index.json');
+this.load.json('stringsEN', 'data/strings/en.json');
+this.load.json('stringsJA', 'data/strings/ja.json');
+
+
+In create():
+
+const items = this.cache.json.get('items');
+const powerUps = this.cache.json.get('powerups');
+const levelsIndex = this.cache.json.get('levelsIndex');
+
+Option B — Fetch JSON (also fine with Vite)
+
+The ZIP includes src/data/loadJson.ts as a minimal fetch() helper. Put the pack under public/ and load via fetch('/data/...').
+
+Save data (for shop/progression)
+
+If you want persistence, store a save blob in localStorage (the pack includes data/save_example.json with a suggested shape). Local storage is a common approach for Phaser web saves.
+
+Data conventions (important for your codegen)
+Tile grid
+
+data/levels/index.json defines:
+
+tileSize: 16
+
+gridWidth: 20
+
+gridHeight: 12
+
+Each level file contains:
+
+grid: string[] (12 rows, each 20 chars)
+
+playerSpawn, shibaSpawn, bins, hotspots
+
+poopRules (spawn interval, type weights, etc.)
+
+shibaRules (speed, zoomies chance, etc.)
+
+Tile legend (shared across levels)
+
+Included per level in tileLegend:
+
+# wall/building (blocked)
+
+. path (walkable)
+
+, grass/slow tile (walkable)
+
+~ water (blocked)
+
+= bridge (walkable)
+
+G gate (interactive obstacle)
+
+B bin (deposit)
+
+P power-up spawn
+
+T hotspot/waypoint
+
+N crowd spawn
+
+S shrine marker
+
+^ / v slope markers (for rolling-poop logic later)
+
+If you want me to tailor the pack to your exact codebase
+
+I can also output a second ZIP that includes:
+
+a Phaser LevelParser (grid → colliders/spawns),
+
+a deterministic RNG utility for daily runs,
+
+and a DataRegistry that loads all JSON and validates against the included schemas.
+
+If you proceed without that, Codex can generate those pieces directly using the data pack you now have.
+
+can codex just automate all of this for me?
+Thought for 6m 4s
+
+Yes—Codex can automate most of this, including generating a full repo (many files), wiring up the JSON content pack, implementing gameplay systems, running commands/tests, and proposing a PR for you to review. It operates by taking a prompt/spec, then navigating your repository to edit files, run commands, and execute tests.
+
+ 
+
+What it will not reliably do without you:
+
+Make product decisions you haven’t specified (balance targets, exact UX).
+
+Guarantee the game is “done” in one shot (you still review/iterate).
+
+Produce final art/audio unless you supply assets or accept placeholders.
+
+Safely do high-risk actions without permissions (it uses sandboxing + approvals; network access is constrained by configuration).
+
+The most “automated” setup
+Option 1: Codex Web (cloud) + GitHub repo (highest automation)
+
+Codex Web runs tasks in the background (including parallel tasks) in a cloud environment and can work directly against your GitHub repo and create pull requests from its work.
+
+ 
+
+Workflow
+
+Put your spec + data pack into a GitHub repo (even if it’s empty otherwise).
+
+In Codex Web, delegate tasks like “scaffold Phaser + Vite + TS”, “implement LevelScene”, etc.
+
+Review the PR(s), merge, and run locally.
+
+Option 2: Codex CLI / IDE extension (local automation)
+
+Codex can run locally in your project directory and can read/edit/run commands depending on mode and approvals.
+
+How to structure the work so Codex actually succeeds
+
+Codex is strongest when you give it:
+
+A single source of truth spec (DESIGN.md)
+
+Acceptance criteria (what “done” means)
+
+Data-driven constraints (your data/*.json pack)
+
+A task plan (small milestones)
+
+Codex can then iteratively run tests/linters and adjust.
+
+Recommended task breakdown (copy/paste into Codex)
+Task 1 — Repo scaffold
+
+Prompt
+
+“Initialize a Phaser 3 + TypeScript + Vite project. Add npm scripts (dev/build/test). Add basic scenes: Boot, Menu, Level, Shop, Results. Use placeholder art.”
+
+Acceptance
+
+npm install then npm run dev loads Menu and starts a level.
+
+Task 2 — Data loader + schemas
+
+Prompt
+
+“Load JSON from /public/data/**. Implement a DataRegistry that loads items, powerups, levels index, and a LevelLoader that validates required fields.”
+
+Acceptance
+
+Missing/invalid level JSON fails with readable error.
+
+Task 3 — Core gameplay slice
+
+Prompt
+
+“Implement LevelScene core loop: Kitty movement, Shiba AI (wander+poop+zoomies), PoopSystem (spawn+age), scoop action, bag capacity, deposit at bin, timer, quota progress, result screen.”
+
+Acceptance
+
+Level 1 playable end-to-end, win/lose works.
+
+Task 4 — Shop + persistence
+
+Prompt
+
+“Implement ShopScene: buy equipment, apply stats, store in localStorage. Add a minimal inventory/equip UI.”
+
+Acceptance
+
+Buy item, equip it, see gameplay stats change next level.
+
+Task 5 — Power-ups + UI polish
+
+Prompt
+
+“Add Speed Boost + Poop Magnet powerups, spawn rules, top-right buttons, basic SFX hooks.”
+
+Acceptance
+
+Power-ups demonstrably affect gameplay and are timed.
+
+Task 6 — Expand to 30 levels + balancing tools
+
+Prompt
+
+“Implement progression unlocks, star ratings, chapter curves, and a debug overlay to visualize hotspots/pathfinding.”
+
+Acceptance
+
+Can play through multiple chapters; difficulty ramps.
+
+Permissions and safety you should expect
+
+Codex uses sandboxing and approval policies; network access is not always on by default, and actions outside the workspace may require approval depending on configuration/mode.
+
+This matters if you ask it to:
+
+install dependencies
+
+pull assets
+
+deploy
+
+call external services
+
+Bottom line
+
+Yes: Codex can generate the repo, implement the game, and iterate with commands/tests—especially if you use Codex Web against a GitHub repo.
+
+No: It’s not “single-click finished product” unless your spec is tight and you accept iterative PR-based development.
+
+If you want the maximum automation, the next concrete step is: put the design doc + data pack in a GitHub repo, then delegate the six tasks above in Codex Web so it can propose PRs directly.
