@@ -1,0 +1,546 @@
+[
+  {
+    "id": "scooper_bamboo",
+    "type": "scooper",
+    "nameJP": "竹スクープ",
+    "nameEN": "Bamboo Starter Scoop",
+    "rarity": "common",
+    "stats": {
+      "scoopArc": 1.0,
+      "scoopCooldown": 1.0,
+      "scoopRangeTiles": 1.2
+    },
+    "perk": null,
+    "set": "starter",
+    "upgradeCosts": [
+      {
+        "coins": 60,
+        "materials": {
+          "bamboo_fiber": 2
+        }
+      },
+      {
+        "coins": 96,
+        "materials": {
+          "bamboo_fiber": 2
+        }
+      },
+      {
+        "coins": 153,
+        "materials": {
+          "bamboo_fiber": 3
+        }
+      },
+      {
+        "coins": 245,
+        "materials": {
+          "bamboo_fiber": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "scooper_fan",
+    "type": "scooper",
+    "nameJP": "うちわスクープ",
+    "nameEN": "Wide Fan Scoop",
+    "rarity": "uncommon",
+    "stats": {
+      "scoopArc": 1.35,
+      "scoopCooldown": 1.15,
+      "scoopRangeTiles": 1.1
+    },
+    "perk": "widerArcHitsMultiple",
+    "set": "festival",
+    "upgradeCosts": [
+      {
+        "coins": 120,
+        "materials": {
+          "bamboo_fiber": 2,
+          "sakura_tape": 1
+        }
+      },
+      {
+        "coins": 192,
+        "materials": {
+          "bamboo_fiber": 2,
+          "sakura_tape": 1
+        }
+      },
+      {
+        "coins": 307,
+        "materials": {
+          "bamboo_fiber": 3,
+          "sakura_tape": 1
+        }
+      },
+      {
+        "coins": 491,
+        "materials": {
+          "bamboo_fiber": 5,
+          "sakura_tape": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "scooper_golden",
+    "type": "scooper",
+    "nameJP": "ゴールデンスクープ",
+    "nameEN": "Golden Scooper",
+    "rarity": "epic",
+    "stats": {
+      "scoopArc": 1.1,
+      "scoopCooldown": 0.95,
+      "coinBonus": 0.15,
+      "scoopRangeTiles": 1.2
+    },
+    "perk": "depositSparkleCoins",
+    "set": "lux",
+    "upgradeCosts": [
+      {
+        "coins": 240,
+        "materials": {
+          "mystery_sticker": 1,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 384,
+        "materials": {
+          "mystery_sticker": 1,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 614,
+        "materials": {
+          "mystery_sticker": 1,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 983,
+        "materials": {
+          "mystery_sticker": 2,
+          "deodor_beads": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "scooper_vacuum",
+    "type": "scooper",
+    "nameJP": "すいこみスクープ",
+    "nameEN": "Vacuum Scoop",
+    "rarity": "rare",
+    "stats": {
+      "scoopBeam": true,
+      "beamLengthTiles": 3.2,
+      "scoopCooldown": 1.05
+    },
+    "perk": "pullPilesSlightly",
+    "set": "tech",
+    "upgradeCosts": [
+      {
+        "coins": 180,
+        "materials": {
+          "iron_bolt": 2,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 288,
+        "materials": {
+          "iron_bolt": 2,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 460,
+        "materials": {
+          "iron_bolt": 3,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 737,
+        "materials": {
+          "iron_bolt": 5,
+          "deodor_beads": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "scooper_net",
+    "type": "scooper",
+    "nameJP": "あみスクープ",
+    "nameEN": "Net Scoop",
+    "rarity": "rare",
+    "stats": {
+      "canScoopWaterlogged": true,
+      "scoopArc": 1.0,
+      "scoopCooldown": 1.05,
+      "scoopRangeTiles": 1.3
+    },
+    "perk": "waterPickupsGiveTime",
+    "set": "zen",
+    "upgradeCosts": [
+      {
+        "coins": 180,
+        "materials": {
+          "bamboo_fiber": 2,
+          "iron_bolt": 1
+        }
+      },
+      {
+        "coins": 288,
+        "materials": {
+          "bamboo_fiber": 2,
+          "iron_bolt": 1
+        }
+      },
+      {
+        "coins": 460,
+        "materials": {
+          "bamboo_fiber": 3,
+          "iron_bolt": 1
+        }
+      },
+      {
+        "coins": 737,
+        "materials": {
+          "bamboo_fiber": 5,
+          "iron_bolt": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "shoes_basic",
+    "type": "shoes",
+    "nameJP": "ふつうのくつ",
+    "nameEN": "Plain Shoes",
+    "rarity": "common",
+    "stats": {
+      "moveSpeed": 1.0
+    },
+    "perk": null,
+    "set": "starter",
+    "upgradeCosts": [
+      {
+        "coins": 50,
+        "materials": {
+          "sakura_tape": 1
+        }
+      },
+      {
+        "coins": 80,
+        "materials": {
+          "sakura_tape": 1
+        }
+      },
+      {
+        "coins": 128,
+        "materials": {
+          "sakura_tape": 1
+        }
+      },
+      {
+        "coins": 204,
+        "materials": {
+          "sakura_tape": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "shoes_wing",
+    "type": "shoes",
+    "nameJP": "ウィングスニーカー",
+    "nameEN": "Wing Sneakers",
+    "rarity": "uncommon",
+    "stats": {
+      "moveSpeed": 1.08
+    },
+    "perk": "burstAfterDeposit3",
+    "set": "festival",
+    "upgradeCosts": [
+      {
+        "coins": 120,
+        "materials": {
+          "sakura_tape": 2,
+          "festival_charm": 1
+        }
+      },
+      {
+        "coins": 192,
+        "materials": {
+          "sakura_tape": 2,
+          "festival_charm": 1
+        }
+      },
+      {
+        "coins": 307,
+        "materials": {
+          "sakura_tape": 3,
+          "festival_charm": 1
+        }
+      },
+      {
+        "coins": 491,
+        "materials": {
+          "sakura_tape": 5,
+          "festival_charm": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "shoes_geta",
+    "type": "shoes",
+    "nameJP": "下駄",
+    "nameEN": "Geta Sandals",
+    "rarity": "uncommon",
+    "stats": {
+      "moveSpeed": 1.03,
+      "stinkSlowMult": 0.8
+    },
+    "perk": "lessSlowOnStink",
+    "set": "zen",
+    "upgradeCosts": [
+      {
+        "coins": 120,
+        "materials": {
+          "bamboo_fiber": 2,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 192,
+        "materials": {
+          "bamboo_fiber": 2,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 307,
+        "materials": {
+          "bamboo_fiber": 3,
+          "deodor_beads": 1
+        }
+      },
+      {
+        "coins": 491,
+        "materials": {
+          "bamboo_fiber": 5,
+          "deodor_beads": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "bag_double",
+    "type": "bag",
+    "nameJP": "ダブルバッグ",
+    "nameEN": "Double Bag",
+    "rarity": "common",
+    "stats": {
+      "bagCapacity": 2
+    },
+    "perk": null,
+    "set": "starter",
+    "upgradeCosts": [
+      {
+        "coins": 70,
+        "materials": {
+          "sakura_tape": 2
+        }
+      },
+      {
+        "coins": 112,
+        "materials": {
+          "sakura_tape": 2
+        }
+      },
+      {
+        "coins": 179,
+        "materials": {
+          "sakura_tape": 3
+        }
+      },
+      {
+        "coins": 286,
+        "materials": {
+          "sakura_tape": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "bag_scented",
+    "type": "bag",
+    "nameJP": "いいにおいバッグ",
+    "nameEN": "Scented Bag",
+    "rarity": "rare",
+    "stats": {
+      "bagCapacity": 3,
+      "stinkCloudGrowthMult": 0.8
+    },
+    "perk": "reduceStinkWhileCarrying",
+    "set": "zen",
+    "upgradeCosts": [
+      {
+        "coins": 180,
+        "materials": {
+          "deodor_beads": 3,
+          "mystery_sticker": 1
+        }
+      },
+      {
+        "coins": 288,
+        "materials": {
+          "deodor_beads": 4,
+          "mystery_sticker": 1
+        }
+      },
+      {
+        "coins": 460,
+        "materials": {
+          "deodor_beads": 5,
+          "mystery_sticker": 1
+        }
+      },
+      {
+        "coins": 737,
+        "materials": {
+          "deodor_beads": 8,
+          "mystery_sticker": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "hat_shiba_meme",
+    "type": "hat",
+    "nameJP": "柴ミームぼうし",
+    "nameEN": "Shiba Meme Hat",
+    "rarity": "uncommon",
+    "stats": {
+      "coinBonus": 0.05
+    },
+    "perk": "moreDogeBubbles",
+    "set": "festival",
+    "upgradeCosts": [
+      {
+        "coins": 90,
+        "materials": {
+          "mystery_sticker": 2
+        }
+      },
+      {
+        "coins": 144,
+        "materials": {
+          "mystery_sticker": 2
+        }
+      },
+      {
+        "coins": 230,
+        "materials": {
+          "mystery_sticker": 3
+        }
+      },
+      {
+        "coins": 368,
+        "materials": {
+          "mystery_sticker": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "mask_gas",
+    "type": "hat",
+    "nameJP": "ガスマスク",
+    "nameEN": "Gas Mask",
+    "rarity": "rare",
+    "stats": {
+      "stinkResistance": 0.35
+    },
+    "perk": "muffledButSafe",
+    "set": "tech",
+    "upgradeCosts": [
+      {
+        "coins": 160,
+        "materials": {
+          "deodor_beads": 3,
+          "iron_bolt": 1
+        }
+      },
+      {
+        "coins": 256,
+        "materials": {
+          "deodor_beads": 4,
+          "iron_bolt": 1
+        }
+      },
+      {
+        "coins": 409,
+        "materials": {
+          "deodor_beads": 5,
+          "iron_bolt": 1
+        }
+      },
+      {
+        "coins": 655,
+        "materials": {
+          "deodor_beads": 8,
+          "iron_bolt": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "charm_bell",
+    "type": "charm",
+    "nameJP": "すずのおまもり",
+    "nameEN": "Bell Charm",
+    "rarity": "epic",
+    "stats": {
+      "shibaStunChanceOnDeposit": 0.08
+    },
+    "perk": "chanceStunShiba",
+    "set": "shrine",
+    "upgradeCosts": [
+      {
+        "coins": 260,
+        "materials": {
+          "festival_charm": 2,
+          "mystery_sticker": 2
+        }
+      },
+      {
+        "coins": 416,
+        "materials": {
+          "festival_charm": 2,
+          "mystery_sticker": 2
+        }
+      },
+      {
+        "coins": 665,
+        "materials": {
+          "festival_charm": 3,
+          "mystery_sticker": 3
+        }
+      },
+      {
+        "coins": 1064,
+        "materials": {
+          "festival_charm": 5,
+          "mystery_sticker": 5
+        }
+      }
+    ]
+  }
+]

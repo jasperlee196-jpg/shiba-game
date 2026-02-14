@@ -1,0 +1,104 @@
+{
+  "id": "ch5_lv18",
+  "chapter": 5,
+  "nameJP": "ふぶきの近道",
+  "nameEN": "Blizzard Shortcut",
+  "timeLimitSec": 75,
+  "quota": 21,
+  "grid": [
+    "####################",
+    "#..................#",
+    "#.T..#....#....#.T.#",
+    "#..................#",
+    "#....#....#....#...#",
+    "#..................#",
+    "#....#....P....#...#",
+    "#..................#",
+    "#....#....#....#...#",
+    "#.T..............B.#",
+    "#..................#",
+    "####################"
+  ],
+  "tileLegend": {
+    "#": "Wall/Building (blocked)",
+    ".": "Path (walkable)",
+    ",": "Grass / Slow Tile (walkable)",
+    "~": "Water (blocked)",
+    "=": "Bridge (walkable)",
+    "G": "Gate (interactive obstacle)",
+    "B": "Bin (deposit)",
+    "P": "Power-up spawn",
+    "T": "Shiba hotspot / waypoint",
+    "N": "Crowd/NPC (dynamic obstacle spawn)",
+    "S": "Shrine marker",
+    "^": "Slope up (walkable, rolling-poop uses slope)",
+    "v": "Slope down (walkable, rolling-poop uses slope)"
+  },
+  "playerSpawn": {
+    "x": 2,
+    "y": 9
+  },
+  "shibaSpawn": {
+    "x": 17,
+    "y": 2
+  },
+  "bins": [
+    {
+      "x": 17,
+      "y": 9
+    }
+  ],
+  "hotspots": [
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 17,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 17,
+      "y": 9
+    },
+    {
+      "x": 10,
+      "y": 6
+    },
+    {
+      "x": 10,
+      "y": 2
+    },
+    {
+      "x": 10,
+      "y": 9
+    }
+  ],
+  "poopRules": {
+    "spawnIntervalSec": 1.5,
+    "maxActive": 50,
+    "freshWindowSec": 6,
+    "types": {
+      "normal": 0.787,
+      "golden": 0.064,
+      "waterlogged": 0.064,
+      "sticky": 0.085
+    }
+  },
+  "shibaRules": {
+    "baseSpeedTilesPerSec": 2.55,
+    "zoomiesChancePerSec": 0.2,
+    "zoomiesDurationSec": 2.8,
+    "poopPauseSec": 0.5
+  },
+  "powerUps": [
+    "speed_boost",
+    "no_stink",
+    "deodor_spray"
+  ],
+  "notes": null
+}

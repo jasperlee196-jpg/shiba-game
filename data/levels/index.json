@@ -1,0 +1,217 @@
+{
+  "tileSize": 16,
+  "gridWidth": 20,
+  "gridHeight": 12,
+  "levels": [
+    {
+      "id": "ch1_lv01",
+      "chapter": 1,
+      "nameJP": "さくら通り：はじめてのスクープ",
+      "nameEN": "Sakura Lane: First Scoop",
+      "file": "/data/levels/ch1_lv01.json"
+    },
+    {
+      "id": "ch1_lv02",
+      "chapter": 1,
+      "nameJP": "ポストの角で",
+      "nameEN": "Mailbox Corner",
+      "file": "/data/levels/ch1_lv02.json"
+    },
+    {
+      "id": "ch1_lv03",
+      "chapter": 1,
+      "nameJP": "お庭ループ",
+      "nameEN": "Courtyard Loop",
+      "file": "/data/levels/ch1_lv03.json"
+    },
+    {
+      "id": "ch1_lv04",
+      "chapter": 1,
+      "nameJP": "ダブルゴミ箱",
+      "nameEN": "Two-Bin Lesson",
+      "file": "/data/levels/ch1_lv04.json"
+    },
+    {
+      "id": "ch2_lv05",
+      "chapter": 2,
+      "nameJP": "とりいゲート",
+      "nameEN": "Torii Gate",
+      "file": "/data/levels/ch2_lv05.json"
+    },
+    {
+      "id": "ch2_lv06",
+      "chapter": 2,
+      "nameJP": "おまいり渋滞",
+      "nameEN": "Prayer Traffic",
+      "file": "/data/levels/ch2_lv06.json"
+    },
+    {
+      "id": "ch2_lv07",
+      "chapter": 2,
+      "nameJP": "お守りを守れ",
+      "nameEN": "Protect the Charm",
+      "file": "/data/levels/ch2_lv07.json"
+    },
+    {
+      "id": "ch2_lv08",
+      "chapter": 2,
+      "nameJP": "神社のうら道",
+      "nameEN": "Shrine Back Alley",
+      "file": "/data/levels/ch2_lv08.json"
+    },
+    {
+      "id": "ch3_lv09",
+      "chapter": 3,
+      "nameJP": "池のそばは危険",
+      "nameEN": "Pondside Danger",
+      "file": "/data/levels/ch3_lv09.json"
+    },
+    {
+      "id": "ch3_lv10",
+      "chapter": 3,
+      "nameJP": "飛び石パニック",
+      "nameEN": "Stepping Stone Panic",
+      "file": "/data/levels/ch3_lv10.json"
+    },
+    {
+      "id": "ch3_lv11",
+      "chapter": 3,
+      "nameJP": "砂の模様に注意",
+      "nameEN": "Respect the Raked Sand",
+      "file": "/data/levels/ch3_lv11.json"
+    },
+    {
+      "id": "ch3_lv12",
+      "chapter": 3,
+      "nameJP": "こいの誘惑",
+      "nameEN": "Koi Distraction",
+      "file": "/data/levels/ch3_lv12.json"
+    },
+    {
+      "id": "ch4_lv13",
+      "chapter": 4,
+      "nameJP": "やたいラッシュ",
+      "nameEN": "Stall Rush",
+      "file": "/data/levels/ch4_lv13.json"
+    },
+    {
+      "id": "ch4_lv14",
+      "chapter": 4,
+      "nameJP": "人ごみスクープ",
+      "nameEN": "Crowd Scoop",
+      "file": "/data/levels/ch4_lv14.json"
+    },
+    {
+      "id": "ch4_lv15",
+      "chapter": 4,
+      "nameJP": "はなびフラッシュ",
+      "nameEN": "Firework Flash",
+      "file": "/data/levels/ch4_lv15.json"
+    },
+    {
+      "id": "ch4_lv16",
+      "chapter": 4,
+      "nameJP": "ねばねば解禁",
+      "nameEN": "Sticky Situation",
+      "file": "/data/levels/ch4_lv16.json"
+    },
+    {
+      "id": "ch5_lv17",
+      "chapter": 5,
+      "nameJP": "つるつる坂",
+      "nameEN": "Slippery Lane",
+      "file": "/data/levels/ch5_lv17.json"
+    },
+    {
+      "id": "ch5_lv18",
+      "chapter": 5,
+      "nameJP": "ふぶきの近道",
+      "nameEN": "Blizzard Shortcut",
+      "file": "/data/levels/ch5_lv18.json"
+    },
+    {
+      "id": "ch5_lv19",
+      "chapter": 5,
+      "nameJP": "こおるうんち",
+      "nameEN": "Frozen Poops",
+      "file": "/data/levels/ch5_lv19.json"
+    },
+    {
+      "id": "ch5_lv20",
+      "chapter": 5,
+      "nameJP": "雪だるま通り",
+      "nameEN": "Snowman Street",
+      "file": "/data/levels/ch5_lv20.json"
+    },
+    {
+      "id": "ch6_lv21",
+      "chapter": 6,
+      "nameJP": "駅前ダッシュ",
+      "nameEN": "Station Dash",
+      "file": "/data/levels/ch6_lv21.json"
+    },
+    {
+      "id": "ch6_lv22",
+      "chapter": 6,
+      "nameJP": "横断歩道タイミング",
+      "nameEN": "Crosswalk Timing",
+      "file": "/data/levels/ch6_lv22.json"
+    },
+    {
+      "id": "ch6_lv23",
+      "chapter": 6,
+      "nameJP": "爆発注意",
+      "nameEN": "Explosive Warning",
+      "file": "/data/levels/ch6_lv23.json"
+    },
+    {
+      "id": "ch6_lv24",
+      "chapter": 6,
+      "nameJP": "コンボ地獄",
+      "nameEN": "Combo Hell",
+      "file": "/data/levels/ch6_lv24.json"
+    },
+    {
+      "id": "ch7_lv25",
+      "chapter": 7,
+      "nameJP": "温泉の湯けむり",
+      "nameEN": "Onsen Steam",
+      "file": "/data/levels/ch7_lv25.json"
+    },
+    {
+      "id": "ch7_lv26",
+      "chapter": 7,
+      "nameJP": "ころがる災害",
+      "nameEN": "Rolling Disaster",
+      "file": "/data/levels/ch7_lv26.json"
+    },
+    {
+      "id": "ch7_lv27",
+      "chapter": 7,
+      "nameJP": "湯けむりと池",
+      "nameEN": "Steam & Pond",
+      "file": "/data/levels/ch7_lv27.json"
+    },
+    {
+      "id": "ch7_lv28",
+      "chapter": 7,
+      "nameJP": "坂の最終試験",
+      "nameEN": "Hill Final Exam",
+      "file": "/data/levels/ch7_lv28.json"
+    },
+    {
+      "id": "ch8_lv29",
+      "chapter": 8,
+      "nameJP": "ズーミーズマラソン",
+      "nameEN": "Zoomies Marathon",
+      "file": "/data/levels/ch8_lv29.json"
+    },
+    {
+      "id": "ch8_lv30",
+      "chapter": 8,
+      "nameJP": "大うんち決戦",
+      "nameEN": "The Great Pile Showdown",
+      "file": "/data/levels/ch8_lv30.json"
+    }
+  ]
+}

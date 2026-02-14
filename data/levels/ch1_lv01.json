@@ -1,0 +1,99 @@
+{
+  "id": "ch1_lv01",
+  "chapter": 1,
+  "nameJP": "さくら通り：はじめてのスクープ",
+  "nameEN": "Sakura Lane: First Scoop",
+  "timeLimitSec": 60,
+  "quota": 8,
+  "grid": [
+    "####################",
+    "#..#............#..#",
+    "#.T#............#T.#",
+    "#..#............#..#",
+    "#..#............#..#",
+    "#..................#",
+    "#.........P........#",
+    "#..#............#..#",
+    "#..#............#..#",
+    "#.T#............#B.#",
+    "#..#............#..#",
+    "####################"
+  ],
+  "tileLegend": {
+    "#": "Wall/Building (blocked)",
+    ".": "Path (walkable)",
+    ",": "Grass / Slow Tile (walkable)",
+    "~": "Water (blocked)",
+    "=": "Bridge (walkable)",
+    "G": "Gate (interactive obstacle)",
+    "B": "Bin (deposit)",
+    "P": "Power-up spawn",
+    "T": "Shiba hotspot / waypoint",
+    "N": "Crowd/NPC (dynamic obstacle spawn)",
+    "S": "Shrine marker",
+    "^": "Slope up (walkable, rolling-poop uses slope)",
+    "v": "Slope down (walkable, rolling-poop uses slope)"
+  },
+  "playerSpawn": {
+    "x": 2,
+    "y": 9
+  },
+  "shibaSpawn": {
+    "x": 17,
+    "y": 2
+  },
+  "bins": [
+    {
+      "x": 17,
+      "y": 9
+    }
+  ],
+  "hotspots": [
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 17,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 17,
+      "y": 9
+    },
+    {
+      "x": 10,
+      "y": 6
+    },
+    {
+      "x": 10,
+      "y": 2
+    },
+    {
+      "x": 10,
+      "y": 9
+    }
+  ],
+  "poopRules": {
+    "spawnIntervalSec": 2.5,
+    "maxActive": 30,
+    "freshWindowSec": 6,
+    "types": {
+      "normal": 1.0
+    }
+  },
+  "shibaRules": {
+    "baseSpeedTilesPerSec": 1.95,
+    "zoomiesChancePerSec": 0.05,
+    "zoomiesDurationSec": 2.0,
+    "poopPauseSec": 0.5
+  },
+  "powerUps": [
+    "speed_boost"
+  ],
+  "notes": null
+}

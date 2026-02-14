@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/powerup.schema.json",
+  "title": "PowerUp",
+  "type": "object",
+  "required": [
+    "id",
+    "nameJP",
+    "nameEN",
+    "icon",
+    "durationSec",
+    "cooldownSec",
+    "effects"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "nameJP": {
+      "type": "string"
+    },
+    "nameEN": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "durationSec": {
+      "type": "number",
+      "minimum": 0
+    },
+    "cooldownSec": {
+      "type": "number",
+      "minimum": 0
+    },
+    "effects": {
+      "type": "object"
+    }
+  }
+}

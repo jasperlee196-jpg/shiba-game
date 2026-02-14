@@ -1,0 +1,14 @@
+{
+  "packName": "shiba-poop-scoop-codex-pack",
+  "titleJP": "柴犬うんちスクープ",
+  "generatedAt": "2026-02-14T01:43:51.231922Z",
+  "paths": {
+    "items": "data/items.json",
+    "powerups": "data/powerups.json",
+    "levelsIndex": "data/levels/index.json",
+    "stringsEN": "data/strings/en.json",
+    "stringsJA": "data/strings/ja.json",
+    "balancePoopTypes": "data/balance/poop_types.json",
+    "balanceChapterCurves": "data/balance/chapter_curves.json"
+  }
+}

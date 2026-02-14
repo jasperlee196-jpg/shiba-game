@@ -1,0 +1,101 @@
+{
+  "id": "ch2_lv08",
+  "chapter": 2,
+  "nameJP": "神社のうら道",
+  "nameEN": "Shrine Back Alley",
+  "timeLimitSec": 65,
+  "quota": 18,
+  "grid": [
+    "####################",
+    "#..................#",
+    "#.T......GG......T.#",
+    "#........#S........#",
+    "#........##........#",
+    "#........##........#",
+    "#........#P........#",
+    "#........##........#",
+    "#..................#",
+    "#.T..............B.#",
+    "#..................#",
+    "####################"
+  ],
+  "tileLegend": {
+    "#": "Wall/Building (blocked)",
+    ".": "Path (walkable)",
+    ",": "Grass / Slow Tile (walkable)",
+    "~": "Water (blocked)",
+    "=": "Bridge (walkable)",
+    "G": "Gate (interactive obstacle)",
+    "B": "Bin (deposit)",
+    "P": "Power-up spawn",
+    "T": "Shiba hotspot / waypoint",
+    "N": "Crowd/NPC (dynamic obstacle spawn)",
+    "S": "Shrine marker",
+    "^": "Slope up (walkable, rolling-poop uses slope)",
+    "v": "Slope down (walkable, rolling-poop uses slope)"
+  },
+  "playerSpawn": {
+    "x": 2,
+    "y": 9
+  },
+  "shibaSpawn": {
+    "x": 17,
+    "y": 2
+  },
+  "bins": [
+    {
+      "x": 17,
+      "y": 9
+    }
+  ],
+  "hotspots": [
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 17,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 17,
+      "y": 9
+    },
+    {
+      "x": 10,
+      "y": 6
+    },
+    {
+      "x": 10,
+      "y": 2
+    },
+    {
+      "x": 10,
+      "y": 9
+    }
+  ],
+  "poopRules": {
+    "spawnIntervalSec": 1.8,
+    "maxActive": 35,
+    "freshWindowSec": 6,
+    "types": {
+      "normal": 0.936,
+      "golden": 0.064
+    }
+  },
+  "shibaRules": {
+    "baseSpeedTilesPerSec": 2.1,
+    "zoomiesChancePerSec": 0.14,
+    "zoomiesDurationSec": 2.2,
+    "poopPauseSec": 0.5
+  },
+  "powerUps": [
+    "speed_boost",
+    "poop_magnet"
+  ],
+  "notes": null
+}

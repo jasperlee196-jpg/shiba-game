@@ -1,0 +1,71 @@
+[
+  {
+    "id": "speed_boost",
+    "nameJP": "スピードブースト",
+    "nameEN": "Speed Boost",
+    "icon": "icon_speed_shoes",
+    "durationSec": 8,
+    "cooldownSec": 0,
+    "effects": {
+      "moveSpeedMult": 1.4
+    }
+  },
+  {
+    "id": "poop_magnet",
+    "nameJP": "うんちマグネット",
+    "nameEN": "Poop Magnet",
+    "icon": "icon_magnet",
+    "durationSec": 7,
+    "cooldownSec": 0,
+    "effects": {
+      "magnetRadiusTiles": 4,
+      "pullRatePerSec": 6
+    }
+  },
+  {
+    "id": "no_stink",
+    "nameJP": "におわないシールド",
+    "nameEN": "No-Stink Shield",
+    "icon": "icon_shield",
+    "durationSec": 6,
+    "cooldownSec": 0,
+    "effects": {
+      "ignoreStinkSlow": true,
+      "protectCombo": true
+    }
+  },
+  {
+    "id": "time_freeze",
+    "nameJP": "ときどめ",
+    "nameEN": "Time Freeze",
+    "icon": "icon_clock",
+    "durationSec": 2.5,
+    "cooldownSec": 0,
+    "effects": {
+      "freezeShiba": true,
+      "freezePoopAging": true
+    }
+  },
+  {
+    "id": "coin_shower",
+    "nameJP": "コインあめ",
+    "nameEN": "Coin Shower",
+    "icon": "icon_coin",
+    "durationSec": 5,
+    "cooldownSec": 0,
+    "effects": {
+      "coinBonusOnDeposit": 0.5
+    }
+  },
+  {
+    "id": "deodor_spray",
+    "nameJP": "消臭スプレー",
+    "nameEN": "Deodor Spray",
+    "icon": "icon_spray",
+    "durationSec": 0,
+    "cooldownSec": 0,
+    "effects": {
+      "clearStinkRadiusTiles": 3
+    }
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/item.schema.json",
+  "title": "Item",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "nameJP",
+    "nameEN",
+    "rarity",
+    "stats",
+    "upgradeCosts"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "scooper",
+        "shoes",
+        "bag",
+        "hat",
+        "charm",
+        "outfit"
+      ]
+    },
+    "nameJP": {
+      "type": "string"
+    },
+    "nameEN": {
+      "type": "string"
+    },
+    "rarity": {
+      "type": "string",
+      "enum": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ]
+    },
+    "stats": {
+      "type": "object"
+    },
+    "perk": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "set": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "upgradeCosts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "coins": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "materials": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "required": [
+          "coins",
+          "materials"
+        ]
+      }
+    }
+  }
+}

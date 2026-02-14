@@ -1,0 +1,148 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "nameJP": "さくら通り",
+      "nameEN": "Sakura Street",
+      "timeLimitSec": 60,
+      "quotaRange": [
+        8,
+        14
+      ],
+      "spawnIntervalSecRange": [
+        2.5,
+        2.0
+      ],
+      "zoomiesChance": [
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "chapter": 2,
+      "nameJP": "神社",
+      "nameEN": "Shrine Grounds",
+      "timeLimitSec": 65,
+      "quotaRange": [
+        12,
+        18
+      ],
+      "spawnIntervalSecRange": [
+        2.1,
+        1.8
+      ],
+      "zoomiesChance": [
+        0.1,
+        0.14
+      ]
+    },
+    {
+      "chapter": 3,
+      "nameJP": "禅ガーデン",
+      "nameEN": "Zen Garden",
+      "timeLimitSec": 70,
+      "quotaRange": [
+        14,
+        22
+      ],
+      "spawnIntervalSecRange": [
+        1.9,
+        1.6
+      ],
+      "zoomiesChance": [
+        0.12,
+        0.18
+      ]
+    },
+    {
+      "chapter": 4,
+      "nameJP": "祭りの夜",
+      "nameEN": "Festival Night",
+      "timeLimitSec": 70,
+      "quotaRange": [
+        16,
+        24
+      ],
+      "spawnIntervalSecRange": [
+        1.7,
+        1.4
+      ],
+      "zoomiesChance": [
+        0.16,
+        0.22
+      ]
+    },
+    {
+      "chapter": 5,
+      "nameJP": "雪の町",
+      "nameEN": "Snowy Neighborhood",
+      "timeLimitSec": 75,
+      "quotaRange": [
+        18,
+        26
+      ],
+      "spawnIntervalSecRange": [
+        1.6,
+        1.3
+      ],
+      "zoomiesChance": [
+        0.18,
+        0.25
+      ]
+    },
+    {
+      "chapter": 6,
+      "nameJP": "商店街",
+      "nameEN": "Downtown Dash",
+      "timeLimitSec": 75,
+      "quotaRange": [
+        20,
+        30
+      ],
+      "spawnIntervalSecRange": [
+        1.4,
+        1.1
+      ],
+      "zoomiesChance": [
+        0.22,
+        0.3
+      ]
+    },
+    {
+      "chapter": 7,
+      "nameJP": "温泉坂",
+      "nameEN": "Onsen & Hills",
+      "timeLimitSec": 80,
+      "quotaRange": [
+        22,
+        34
+      ],
+      "spawnIntervalSecRange": [
+        1.2,
+        1.0
+      ],
+      "zoomiesChance": [
+        0.25,
+        0.34
+      ]
+    },
+    {
+      "chapter": 8,
+      "nameJP": "最終章",
+      "nameEN": "Finale",
+      "timeLimitSec": 90,
+      "quotaRange": [
+        26,
+        40
+      ],
+      "spawnIntervalSecRange": [
+        1.0,
+        0.8
+      ],
+      "zoomiesChance": [
+        0.3,
+        0.45
+      ]
+    }
+  ]
+}

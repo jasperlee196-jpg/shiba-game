@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "coins": 0,
+  "ownedItems": [
+    "scooper_bamboo",
+    "shoes_basic",
+    "bag_double"
+  ],
+  "equipped": {
+    "scooper": "scooper_bamboo",
+    "shoes": "shoes_basic",
+    "bag": "bag_double",
+    "hat": null,
+    "charm": null,
+    "outfit": null
+  },
+  "itemLevels": {
+    "scooper_bamboo": 1,
+    "shoes_basic": 1,
+    "bag_double": 1
+  },
+  "unlockedLevelIndex": 0
+}

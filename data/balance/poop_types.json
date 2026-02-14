@@ -1,0 +1,54 @@
+{
+  "types": {
+    "normal": {
+      "unlockChapter": 1,
+      "baseScore": 10,
+      "ageToStinkSec": 14,
+      "stepSlowPct": 0.25
+    },
+    "sticky": {
+      "unlockChapter": 4,
+      "baseScore": 12,
+      "ageToStinkSec": 12,
+      "stepSlowPct": 0.35
+    },
+    "rolling": {
+      "unlockChapter": 7,
+      "baseScore": 14,
+      "ageToStinkSec": 14,
+      "stepSlowPct": 0.25
+    },
+    "waterlogged": {
+      "unlockChapter": 3,
+      "baseScore": 13,
+      "ageToStinkSec": 10,
+      "stepSlowPct": 0.3
+    },
+    "explosive": {
+      "unlockChapter": 6,
+      "baseScore": 15,
+      "ageToStinkSec": 10,
+      "stepSlowPct": 0.3,
+      "splitsInto": 3
+    },
+    "golden": {
+      "unlockChapter": 2,
+      "baseScore": 25,
+      "ageToStinkSec": 999,
+      "stepSlowPct": 0.1,
+      "coinBonus": 25
+    },
+    "cursed": {
+      "unlockChapter": 8,
+      "baseScore": 20,
+      "ageToStinkSec": 8,
+      "stepSlowPct": 0.45
+    }
+  },
+  "lifecycle": {
+    "freshWindowSec": 6,
+    "freshBonusMax": 15,
+    "depositBonus": 20,
+    "comboBreakOnStep": true
+  }
+}

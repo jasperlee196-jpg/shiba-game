@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/level.schema.json",
+  "title": "Level",
+  "type": "object",
+  "required": [
+    "id",
+    "chapter",
+    "nameJP",
+    "nameEN",
+    "timeLimitSec",
+    "quota",
+    "grid",
+    "tileLegend",
+    "playerSpawn",
+    "shibaSpawn",
+    "bins",
+    "hotspots",
+    "poopRules",
+    "shibaRules",
+    "powerUps"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "nameJP": {
+      "type": "string"
+    },
+    "nameEN": {
+      "type": "string"
+    },
+    "timeLimitSec": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "quota": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "grid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tileLegend": {
+      "type": "object"
+    },
+    "playerSpawn": {
+      "type": "object",
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "integer"
+        }
+      }
+    },
+    "shibaSpawn": {
+      "type": "object",
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "integer"
+        }
+      }
+    },
+    "bins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "x",
+          "y"
+        ],
+        "properties": {
+          "x": {
+            "type": "integer"
+          },
+          "y": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "hotspots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "x",
+          "y"
+        ],
+        "properties": {
+          "x": {
+            "type": "integer"
+          },
+          "y": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "poopRules": {
+      "type": "object"
+    },
+    "shibaRules": {
+      "type": "object"
+    },
+    "powerUps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
